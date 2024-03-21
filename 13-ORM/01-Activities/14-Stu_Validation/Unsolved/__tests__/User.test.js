@@ -1,3 +1,7 @@
+const { TextEncoder, TextDecoder } = require('util');
+global.TextEncoder = TextEncoder;
+global.TextDecoder = TextDecoder;
+
 const sequelize = require('../config/connection');
 const User = require('../models/User.js');
 
