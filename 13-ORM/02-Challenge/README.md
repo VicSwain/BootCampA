@@ -4,7 +4,7 @@
 
 Internet retail, also known as **e-commerce**, plays a significant role within the electronics industry, as it empowers businesses and consumers alike to conveniently engage in online buying and selling of electronic products. In the latest available data from 2021, the industry in the United States alone was estimated to have generated the substantial amount of US$2.54 trillion, according to the United Nations Conference on Trade and Development. E-commerce platforms like Shopify and WooCommerce provide a suite of services to businesses of all sizes. Due to the prevalence of these platforms, developers should understand the fundamental architecture of e-commerce sites.
 
-Your task is to build the back end for an e-commerce site by modifying starter code. You’ll configure a working Express.js API to use Sequelize to interact with a MySQL database.
+Your task is to build the back end for an e-commerce site by modifying starter code. You’ll configure a working Express.js API to use Sequelize to interact with a PostgreSQL database.
 
 Because this application won’t be deployed, you’ll also need to provide a link to a walkthrough video that demonstrates its functionality and all of the acceptance criteria being met. You’ll need to submit a link to the video and add it to the readme of your project.
 
@@ -20,12 +20,12 @@ SO THAT my company can compete with other e-commerce companies
 
 ```md
 GIVEN a functional Express.js API
-WHEN I add my database name, MySQL username, and MySQL password to an environment variable file
+WHEN I add my database name, PostgreSQL username, and PostgreSQL password to an environment variable file
 THEN I am able to connect to a database using Sequelize
 WHEN I enter schema and seed commands
 THEN a development database is created and is seeded with test data
 WHEN I enter the command to invoke the application
-THEN my server is started and the Sequelize models are synced to the MySQL database
+THEN my server is started and the Sequelize models are synced to the PostgreSQL database
 WHEN I open API GET routes in Insomnia for categories, products, or tags
 THEN the data for each of these routes is displayed in a formatted JSON
 WHEN I test API POST, PUT, and DELETE routes in Insomnia
@@ -52,9 +52,9 @@ Your walkthrough video should also show the POST, PUT, and DELETE routes for pro
 
 This Challenge will require a video submission. Refer to the [Fullstack Blog Video Submission Guide](https://coding-boot-camp.github.io/full-stack/computer-literacy/video-submission-guide) for additional guidance on creating a video.
 
-You’ll need to use the [MySQL2](https://www.npmjs.com/package/mysql2) and [Sequelize](https://www.npmjs.com/package/sequelize) packages to connect your Express.js API to a MySQL database and the [dotenv](https://www.npmjs.com/package/dotenv) package to use environment variables to store sensitive data.
+You’ll need to use the [pg](https://node-postgres.com/) and [Sequelize](https://www.npmjs.com/package/sequelize) packages to connect your Express.js API to a PostgreSQL database and the [dotenv](https://www.npmjs.com/package/dotenv) package to use environment variables to store sensitive data.
 
-Use the `schema.sql` file in the `db` folder to create your database with MySQL shell commands. Use environment variables to store sensitive data like your MySQL username, password, and database name.
+Use the `schema.sql` file in the `db` folder to create your database with PostgreSQL shell commands. Use environment variables to store sensitive data like your PostgreSQL username, password, and database name.
 
 ### Database Models
 
@@ -184,7 +184,7 @@ After creating the models and routes, run `npm run seed` to seed data to your da
 
 ### Sync Sequelize to the Database on Server Start
 
-Create the code needed in `server.js` to sync the Sequelize models to the MySQL database on server start.
+Create the code needed in `server.js` to sync the Sequelize models to the PostgreSQL database on server start.
 
 ## Grading Requirements
 
@@ -198,7 +198,7 @@ Create the code needed in `server.js` to sync the Sequelize models to the MySQL 
 >
 > * A repository that only includes starter code
 
-This Challenge is graded based on the following criteria: 
+This Challenge is graded based on the following criteria:
 
 ### Deliverables: 10%
 
@@ -210,7 +210,7 @@ This Challenge is graded based on the following criteria:
 
 * The walkthrough video must show all of the technical acceptance criteria being met.
 
-* The walkthrough video must demonstrate how to create the schema from the MySQL shell.
+* The walkthrough video must demonstrate how to create the schema from the PostgreSQL shell.
 
 * The walkthrough video must demonstrate how to seed the database from the command line.
 
@@ -226,11 +226,11 @@ This Challenge is graded based on the following criteria:
 
 * Satisfies all of the preceding acceptance criteria plus the following:
 
-  * Connects to a MySQL database using the [MySQL2](https://www.npmjs.com/package/mysql) and [Sequelize](https://www.npmjs.com/package/sequelize) packages.
+  * Connects to a PostgreSQL database using the [pg](https://node-postgres.com/) and [Sequelize](https://www.npmjs.com/package/sequelize) packages.
 
-  * Stores sensitive data, like a user’s MySQL username, password, and database name, using environment variables through the [dotenv](https://www.npmjs.com/package/dotenv) package.
+  * Stores sensitive data, like a user’s PostgreSQL username, password, and database name, using environment variables through the [dotenv](https://www.npmjs.com/package/dotenv) package.
 
-  * Syncs Sequelize models to a MySQL database on the server start.
+  * Syncs Sequelize models to a PostgreSQL database on the server start.
 
   * Includes column definitions for all four models outlined in the Challenge instructions.
 

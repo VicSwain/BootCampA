@@ -45,11 +45,11 @@ router.get('/:id/hasPets', async (req, res) => {
     const petData = userData.hasPets();
     // If petData evaluates as false (user has 0 pets), then the user will receive the message below
     if (!petData) {
-      res.status(400).json({ message: 'This person has no pets.' });
+      res.status(200).json({ message: 'This person has no pets.' });
       return;
     }
     // Otherwise, the user will see that the user that they searched does have pets!
-    res.json({ message: 'This person has pets!' });
+    res.status(200).json({ message: 'This person has pets!' });
   } catch (err) {
     res.status(400).json(err);
   }

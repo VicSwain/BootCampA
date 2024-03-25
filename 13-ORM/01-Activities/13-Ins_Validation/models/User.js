@@ -17,10 +17,10 @@ User.init(
     email: {
       type: DataTypes.STRING,
       // prevents duplicate email addresses in DB
-      unique: true,
+      unique: true, //look up validations for sequlize
       // checks for email format (foo@bar.com)
       validate: {
-        isEmail: true,
+        isEmail: true, // built in validation in sequlaize 
       },
     },
     password: {

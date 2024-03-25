@@ -2,14 +2,14 @@ const Driver = require('./Driver');
 const License = require('./License');
 
 // Define a Driver as having one License to create a foreign key in the `license` table
-Driver.hasOne(License, {
+Driver.hasOne(License, { //.hasone is sequlzlie
   foreignKey: 'driver_id',
   // When we delete a Driver, make sure to also delete the associated License.
   onDelete: 'CASCADE',
 });
 
 // We can also define the association starting with License
-License.belongsTo(Driver, {
+License.belongsTo(Driver, { // belongsTo is a sequalize method
   foreignKey: 'driver_id',
 });
 

@@ -1,10 +1,10 @@
 # 🏗️ Create a Custom Instance Method
 
-Work with a partner to implement the following user story:
+Work with a group to implement the following user story:
 
 * As a user, I want to log in to my account with my password.
 
-* As a developer, I want to allow a user to log in to their account securely so that their password information isn't compromised. 
+* As a developer, I want to allow a user to log in to their account securely so that their password information isn't compromised.
 
 ## Acceptance Criteria
 
@@ -18,7 +18,7 @@ What tools does `bcrypt` offer to help us compare user input to a hashed passwor
 
 ## 🏆 Bonus
 
-If you have completed this activity, work through the following challenge with your partner to further your knowledge:
+If you have completed this activity, work through the following challenge with your group to further your knowledge:
 
 * How can we DRY up the code using Sequelize's static model methods?
 

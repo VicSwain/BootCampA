@@ -1,10 +1,10 @@
 # 📐 Add Comments to Implementation of the Login Route
 
-Work with a partner to add comments describing the functionality of the code found in [Unsolved](./Unsolved/routes/api/user-routes.js).
+Work with a group to add comments describing the functionality of the code found in [Unsolved](./Unsolved/routes/api/user-routes.js).
 
 ## 📝 Notes
 
-Refer to the documentation: 
+Refer to the documentation:
 
 [npm documentation on bcrypt](https://www.npmjs.com/package/bcrypt)
 
@@ -12,7 +12,7 @@ Refer to the documentation:
 
 ## 🏆 Bonus
 
-If you have completed this activity, work through the following challenge with your partner to further your knowledge:
+If you have completed this activity, work through the following challenge with your group to further your knowledge:
 
 * How can we persist a login state?
 

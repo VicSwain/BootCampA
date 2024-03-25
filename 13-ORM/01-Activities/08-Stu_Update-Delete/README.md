@@ -1,6 +1,6 @@
-## 🏗️ Implement the PUT and DELETE Route with Your Own Parameters
+# 🏗️ Implement the `PUT` and `DELETE` Route with Your Own Parameters
 
-Work with a partner to implement the following user story:
+Work with a group to implement the following user story:
 
 * As a bookstore owner, I want to be able to update and remove certain books of my choice from the inventory.
 
@@ -18,7 +18,7 @@ Which option do you need to use on the method call?
 
 ## 🏆 Bonus
 
-If you have completed this activity, work through the following challenge with your partner to further your knowledge:
+If you have completed this activity, work through the following challenge with your group to further your knowledge:
 
 * What SQL operators does Sequelize support?
 

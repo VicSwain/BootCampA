@@ -1,12 +1,12 @@
-# 🐛 Users Route Is Missing Data
+# 🐛 Readers Route Is Missing Data
 
-Work with a partner to resolve the following issues:
+Work with a group to resolve the following issues:
 
 * As a user, I want to see the books I own and a count of how many of those are short novels.
 
 ## Expected Behavior
 
-When a request is made for user data, the response includes a `shortBooks` property that counts the books with between 100 and 300 pages.
+When a request is made for reader data, the response includes a `shortBooks` property that counts the books with between 100 and 300 pages.
 
 ## Actual Behavior
 
@@ -14,7 +14,7 @@ The user data in the response does not include a `shortBooks` property.
 
 ## Steps to Reproduce the Problem
 
-1. Run `node seeds.js` from the command line to seed the database.
+1. Run `node seeds/seed.js` from the command line to seed the database.
 
 2. Run `npm start` to start the server.
 
@@ -30,7 +30,7 @@ How could you obtain this short novel count using a regular SQL query?
 
 ## 🏆 Bonus
 
-If you have completed this activity, work through the following challenge with your partner to further your knowledge:
+If you have completed this activity, work through the following challenge with your group to further your knowledge:
 
 * How would you build a many-to-many relationship using Sequelize?
 

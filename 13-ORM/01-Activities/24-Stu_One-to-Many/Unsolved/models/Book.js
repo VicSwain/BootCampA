@@ -35,7 +35,14 @@ Book.init(
       type: DataTypes.BOOLEAN,
       defaultValue: true
     },
+    card_id: {
+      type: DataTypes.INTEGER,
+      references: {
+      model: 'libray_card',
+      key: 'id',
+    },
   },
+},
   {
     sequelize,
     timestamps: false,

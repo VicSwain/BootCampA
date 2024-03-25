@@ -1,6 +1,6 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
-
+//hooks are ways we can accomplish this before or after writing something but before going to the db
 class User extends Model {}
 
 User.init(
@@ -41,7 +41,7 @@ User.init(
         return newUserData;
       },
       // Here, we use the beforeUpdate hook to make all of the characters lower case in an updated email address, before updating the database.
-      beforeUpdate: async (updatedUserData) => {
+      beforeUpdate: async (updatedUserData) => { //beforeUpdate and beforeCreate are sequalize 
         updatedUserData.email = await updatedUserData.email.toLowerCase();
         return updatedUserData;
       },

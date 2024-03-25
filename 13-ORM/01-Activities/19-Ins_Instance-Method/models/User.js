@@ -4,7 +4,7 @@ const sequelize = require('../config/connection');
 
 class User extends Model {
   // This instance method uses a conditional statement to check if a user has pets
-  hasPets() {
+  hasPets() { //limits the amount of work we would have to do for the db, check on the model itself, checks to see if any user has pets, returns boolean, and do not have to put a has pets column in the db
     if (this.numberOfPets > 0) {
       return true;
     } else {

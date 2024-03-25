@@ -5,14 +5,13 @@ const sequelize = new Sequelize(
   // Database name
   'library_db',
   // User
-  'root',
+  'postgres',
   // Password
-  'myPassword',
+  'password',
   {
     // Database location
     host: 'localhost',
-    dialect: 'mysql',
-    port: 3306
+    dialect: 'postgres'
   }
 );
 

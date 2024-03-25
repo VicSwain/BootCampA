@@ -1,6 +1,6 @@
 # Module 13 Mini-Project: Travel Planner
 
-In this mini-project, you will work with a group to build an API using Node.js, Express.js, MySQL, and Sequelize, and you will deploy it to Heroku.
+  In this mini-project, you will work with a group to build an API using Node.js, Express.js, PostgreSQL, and Sequelize, and you will deploy it to Render.
 
 ## User Stories
 
@@ -18,7 +18,7 @@ In this mini-project, you will work with a group to build an API using Node.js, 
 
 * It's done when the POST route `/api/travellers` creates traveller data and returns a successful response in Insomnia.
 
-* It's done when the GET route `/api/travellers/:id` returns a single traveller's data with their associated trips and a list of locations in Insomnia. 
+* It's done when the GET route `/api/travellers/:id` returns a single traveller's data with their associated trips and a list of locations in Insomnia.
 
 * It's done when the DELETE route `/api/travellers/:id` removes a traveller and any trips associated with them and returns a successful response in Insomnia.
 
@@ -26,7 +26,7 @@ In this mini-project, you will work with a group to build an API using Node.js, 
 
 * It's done when the POST route `/api/locations` creates location data and returns a successful response in Insomnia.
 
-* It's done when the GET route `/api/locations/:id` returns a single location's data, with its associated trips, in Insomnia. 
+* It's done when the GET route `/api/locations/:id` returns a single location's data, with its associated trips, in Insomnia.
 
 * It's done when the DELETE route `/api/locations/:id` removes a location and any trips associated with it and returns a successful response in Insomnia.
 
@@ -34,9 +34,9 @@ In this mini-project, you will work with a group to build an API using Node.js, 
 
 * It's done when the DELETE route `/api/trips/:id` removes a trip and returns a successful response in Insomnia.
 
-* It's done when the API is successfully deployed to Heroku with a MySQL database.
+* It's done when the API is successfully deployed to Render with a PostgreSQL database.
 
-## Specifications 
+## Specifications
 
 * Database models should have the following fields and associations:
 
@@ -45,23 +45,23 @@ In this mini-project, you will work with a group to build an API using Node.js, 
     * `id`: primary key
 
     * `name`
-      
+
     * `email`
 
   * `Location`
 
     * `id`: primary key
-    
-    * `location_name`
+
+    * `name`
 
   * `Trips`
-      
+
     * `id`: primary key
 
-    * `trip_budget` 
-      
+    * `trip_budget`
+
     * `traveller_amount`
-      
+
     * `traveller_id`: non-unique foreign key that references the `Traveller` model's `id` field (`Traveller.id`)
 
     * `location_id`: non-unique foreign key that references the `Location` model's `id` field (`Location.id`)
@@ -72,36 +72,36 @@ In this mini-project, you will work with a group to build an API using Node.js, 
 
 ## 📝 Notes
 
-Refer to the documentation: 
+  Refer to the documentation:
 
 * [Sequelize documentation on many-to-many relationships](https://sequelize.org/master/manual/assocs.html#many-to-many-relationships)
 
-* [The Full-Stack Blog guide to deploying with Heroku and MySQL](https://coding-boot-camp.github.io/full-stack/heroku/deploy-with-heroku-and-mysql)
+* [The Full-Stack Blog guide to deploying with Render and PostgreSQL](https://coding-boot-camp.github.io/full-stack/render/deploy-with-render-and-postgresql)
 
-Use the following sample data as the request body POST `/api/trips` route:
+  Use the following sample data as the request body POST `/api/trips` route:
 
   ```json
-  {
-    "trip_budget": 2000.50,
-    "traveller_amount": 6,
-    "traveller_id": 1,
-    "location_id": 2
-  }
+      {
+        "trip_budget": 2000.50,
+        "traveller_amount": 6,
+        "traveller_id": 1,
+        "location_id": 2
+      }
   ```
 
----
+  ---
 
 ## 💡 Hints
 
-* What model association option can we set to automatically delete associated data? 
+* What model association option can we set to automatically delete associated data?
 
-* How can we use the data in `Develop/seeds` to provide starter data for locations and travellers and not have to create it ourselves? 
+* How can we use the data in `Develop/seeds` to provide starter data for locations and travellers and not have to create it ourselves?
 
-* If we're deploying this to Heroku, can we work on this from within the class repository, or should we make a new GitHub repo?
+* If we're deploying this to Render, can we work on this from within the class repository, or should we make a new GitHub repo?
 
 ## 🏆 Bonus
 
-If you have completed this activity, work through the following challenge with your partner to further your knowledge:
+  If you have completed this activity, work through the following challenge with your group to further your knowledge:
 
 * Add validations to all of the model data.
 
