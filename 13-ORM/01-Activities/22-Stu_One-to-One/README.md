@@ -1,6 +1,6 @@
 # 📐 Add Comments to Implementation of a One-to-One Association
 
-Work with a partner to add comments describing the functionality of the code found in the following files: 
+Work with a group to add comments describing the functionality of the code found in the following files:
 
 * [Unsolved/models/index.js](./Unsolved/models/index.js)
 
@@ -12,7 +12,7 @@ Work with a partner to add comments describing the functionality of the code fou
 
 ## 📝 Notes
 
-Refer to the documentation: 
+Refer to the documentation:
 
 [Sequelize documentation on associations](https://sequelize.org/master/manual/assocs.html)
 
@@ -20,9 +20,9 @@ Refer to the documentation:
 
 ## 🏆 Bonus
 
-If you have completed this activity, work through the following challenge with your partner to further your knowledge:
+If you have completed this activity, work through the following challenge with your group to further your knowledge:
 
-* What is an entity-relationship diagram (ERD)?
+* What is an entity relationship diagram (ERD)?
 
 Use [Google](https://www.google.com) or another search engine to research this.
 

@@ -1,6 +1,6 @@
 # 🐛 Code Not Following ESLint Rules
 
-Work with a partner to resolve the following issues:
+Work with a group to resolve the following issues:
 
 * As a developer on a team, I want my team's codebase to follow uniform formatting and styling, using ESLint rules.
 
@@ -30,8 +30,8 @@ How can we better understand the rules in [Unsolved/.eslintrc.json](Unsolved/.es
 
 ## 🏆 Bonus
 
-If you have completed this activity, work through the following challenge with your partner to further your knowledge:
+If you have completed this activity, work through the following challenge with your group to further your knowledge:
 
-* How can we ensure that the code passes all ESLint checks before merging a GitHub pull request? 
+* How can we ensure that the code passes all ESLint checks before merging a GitHub pull request?
 
 Use [Google](https://www.google.com) or another search engine to research this.

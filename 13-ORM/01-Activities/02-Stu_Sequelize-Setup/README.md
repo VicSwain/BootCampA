@@ -1,6 +1,6 @@
 # 📖 Replace Hardcoded Credentials With Environment Variables
 
-Work with a partner to implement the following user story:
+Work with a group to implement the following user story:
 
 * As a developer, I want to protect my database credentials by not hardcoding them in the project files.
 
@@ -12,7 +12,7 @@ Work with a partner to implement the following user story:
 
 ## 📝 Notes
 
-Refer to the documentation: 
+Refer to the documentation:
 
 * [npm documentation on dotenv](https://www.npmjs.com/package/dotenv)
 
@@ -24,9 +24,9 @@ How does the `dotenv` npm package use `.env` files?
 
 ## 🏆 Bonus
 
-If you have completed this activity, work through the following challenge with your partner to further your knowledge:
+If you have completed this activity, work through the following challenge with your group to further your knowledge:
 
-* How can you set environment variables from the command line? 
+* How can you set environment variables from the command line?
 
 Use [Google](https://www.google.com) or another search engine to research this.
 

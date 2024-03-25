@@ -12,7 +12,7 @@ router.get('/', (req, res) => {
 // GET a book
 router.get('/:isbn', (req, res) => {
   // Get one book from the book table
-  Book.findOne( //.find one is a 
+  Book.findOne(
     {
       // Gets the book based on the isbn given in the request parameters
       where: { 
@@ -27,7 +27,7 @@ router.get('/:isbn', (req, res) => {
 // Updates book based on its isbn
 router.put('/:isbn', (req, res) => {
   // Calls the update method on the Book model
-  Book.update( //.update is a sequalize method
+  Book.update(
     {
       // All the fields you can update and the data attached to the request body.
       title: req.body.title,
@@ -70,7 +70,7 @@ router.post('/seed', (req, res) => {
     {
       title: 'Make It Stick: The Science of Successful Learning',
       author: 'Peter Brown',
-      isbn: '9780674729018',
+      isbn: '978-0674729018',
       pages: 336,
       edition: 1,
       is_paperback: false,
@@ -79,7 +79,7 @@ router.post('/seed', (req, res) => {
       title:
         'Essential Scrum: A Practical Guide to the Most Popular Agile Process',
       author: 'Kenneth Rubin',
-      isbn: '9780137043293',
+      isbn: '978-0137043293',
       pages: 500,
       edition: 1,
       is_paperback: true,
@@ -88,7 +88,7 @@ router.post('/seed', (req, res) => {
       title:
         "White Fragility: Why It's So Hard for White People to Talk About Racism",
       author: 'Robin DiAngelo',
-      isbn: '9780807047415',
+      isbn: '978-0807047415',
       pages: 192,
       edition: 2,
       is_paperback: true,
@@ -96,7 +96,7 @@ router.post('/seed', (req, res) => {
     {
       title: 'The Pragmatic Programmer: Your Journey To Mastery',
       author: 'David Thomas',
-      isbn: '9780135957059',
+      isbn: '978-0135957059',
       pages: 352,
       edition: 2,
       is_paperback: false,
@@ -104,7 +104,7 @@ router.post('/seed', (req, res) => {
     {
       title: 'The Art of Computer Programming, Vol. 1: Fundamental Algorithms',
       author: 'Donald Knuth',
-      isbn: '9780201896831',
+      isbn: '978-0201896831',
       pages: 672,
       edition: 3,
       is_paperback: false,
@@ -112,7 +112,7 @@ router.post('/seed', (req, res) => {
     {
       title: 'Algorithms of Oppression: How Search Engines Reinforce Racism',
       author: 'Safiya Umoja Noble',
-      isbn: '9781479837243',
+      isbn: '978-1479837243',
       pages: 256,
       edition: 1,
       is_paperback: true,

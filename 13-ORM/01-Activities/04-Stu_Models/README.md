@@ -1,10 +1,10 @@
-# 🐛 MySQL Table Isn't Being Created to Specifications
+# 🐛 PostgreSQL Table Isn't Being Created to Specifications
 
-Work with a partner to resolve the following issues:
+Work with a group to resolve the following issues:
 
-* As a developer, I want a MySQL table with the same name as the Sequelize model.
+* As a developer, I want a PostgreSQL table with the same name as the Sequelize model.
 
-* As a developer, I want a more descriptive primary key name in the MySQL table.
+* As a developer, I want a more descriptive primary key name in the PostgreSQL table.
 
 ## Expected Behavior
 
@@ -18,13 +18,13 @@ The table name is `books`, and the primary key is `id`.
 
 1. Run `npm start` from the command line to start the server and sync the database.
 
-2. Run `mysql -u root -p` to log into the MySQL shell.
+2. Run `psql -U postgres` to log into the PostgreSQL shell.
 
-3. In the MySQL shell, run `USE library_db;` to switch to the library database.
+3. In the PostgreSQL shell, run `\c library_db;` to switch to the library database.
 
-4. Try to run `DESCRIBE book;`. It will fail because the table name is `books`.
+4. Try to run `\d book;` to describe the `book` table. It will fail because the table name is `books`.
 
-5. Run `DESCRIBE books;`. Note that the primary key is named `id` and not `book_id`.
+5. Run `\d books;`. Note that the primary key is named `id` and not `book_id`.
 
 ---
 
@@ -34,7 +34,7 @@ What options does Sequelize provide when it comes to naming tables and fields?
 
 ## 🏆 Bonus
 
-If you have completed this activity, work through the following challenge with your partner to further your knowledge:
+If you have completed this activity, work through the following challenge with your group to further your knowledge:
 
 * How can you globally define table-naming rules for your Sequelize connection?
 

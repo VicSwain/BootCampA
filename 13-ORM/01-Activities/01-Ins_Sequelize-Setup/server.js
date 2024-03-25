@@ -13,6 +13,3 @@ app.use(express.urlencoded({ extended: true }));
 sequelize.sync().then(() => {
   app.listen(PORT, () => console.log('Now listening'));
 });
-
-
-//JS classes will take the place of tables
